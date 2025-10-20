@@ -1,67 +1,25 @@
 name: apple-mcp
+description: MCP server for macOS Apple apps - Contacts, Notes, Messages, Mail, Reminders, Calendar, and Maps
 version: 1.0.0
-description: Apple MCP tools for contacts, notes, messages, mail, reminders, calendar, and maps integration
-author: Dhravya Shah
+author: Quinn May
 homepage: https://github.com/quinnbmay/apple-mcp
 license: MIT
 
-# Installation configuration
-install:
+config:
   command: bunx
   args:
-    - --no-cache
-    - apple-mcp@latest
+    - apple-mcp
 
-# Supported platforms
-platforms:
-  - darwin  # macOS only
-
-# Features provided by this MCP server
-features:
-  - Contacts management (search, lookup phone numbers)
-  - Notes operations (search, list, create)
-  - Messages (send, read, schedule, check unread)
-  - Mail operations (read unread, search, send emails)
-  - Reminders (create, search, list, open)
-  - Calendar events (create, search, list, open)
-  - Maps (search locations, directions, guides, favorites)
-
-# Tools provided
-tools:
-  - name: contacts
-    description: Search and retrieve contacts from Apple Contacts app
-  - name: notes
-    description: Search, retrieve and create notes in Apple Notes app
-  - name: messages
-    description: Interact with Apple Messages app - send, read, schedule messages
-  - name: mail
-    description: Interact with Apple Mail app - read, search, and send emails
-  - name: reminders
-    description: Search, create, and open reminders in Apple Reminders app
-  - name: calendar
-    description: Search, create, and open calendar events in Apple Calendar app
-  - name: maps
-    description: Search locations, manage guides, save favorites, and get directions
-
-# Required permissions
-permissions:
-  - Contacts
-  - Notes
-  - Messages
-  - Mail
-  - Reminders
-  - Calendar
-  - Accessibility
-
-# Additional metadata
-tags:
-  - apple
-  - macos
-  - contacts
-  - notes
-  - messages
-  - mail
-  - reminders
-  - calendar
-  - maps
-  - applescript
+metadata:
+  platforms:
+    - darwin
+  tags:
+    - apple
+    - macos
+    - contacts
+    - notes
+    - messages
+    - mail
+    - reminders
+    - calendar
+    - maps
